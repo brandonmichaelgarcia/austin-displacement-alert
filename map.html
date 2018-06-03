@@ -9,24 +9,38 @@
     <link href="https://fonts.googleapis.com/css?family=:Open+Sans:400,700Anaheim" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anaheim" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!--LEAFLET CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <!--LEAFLET JS-->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <!--MAP CSS-->
+	  <link rel="stylesheet" href="map.css"/>
   </head>
 
   <body>
     <header id="pageHeader"><p class="logo">Austin Displacement Alert Project</p></header>
     <nav id="mainNav">
       <strong>Step 1:</strong><br>
-      <p>Zoom into a blockgroup</p>
+      <p>Toggle or Zoom into a blockgroup or zip code</p>
       <strong>Step 2:</strong><br>
-      <p>Click on the map to change a marker</p>
+      <p>Click on the map to change modify default route</p>
       <strong>Step 3:</strong><br>
-      <p>Create your route by adding stops or moving the end markers</p>
+      <p>Create your route by adding stops or moving the start and end markers</p>
       <strong>Step 4:</strong><br>
       <p>Click print your canvassing route from the browser and Get Out There!</p>
     </nav>
     <article id="mainArticle">
-      <div class="map">
+      <div id="map">
       </div>
     </article>
 
+    <script type="text/javascript" src="travis-block.js"></script>
+    <script type="text/javascript" src="zipcodes.js"></script>
+    <script type="text/javascript" src="map.js"></script>
   </body>
 </html>
