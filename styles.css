@@ -1,0 +1,105 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  display: grid;
+  grid-template-areas:
+    "header header "
+    "nav article "
+    "footer footer";
+  grid-template-rows: 10% 1fr 60px;
+  grid-template-columns: 25% 75%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+h1,h2,h3,h4,a,li,ul{
+  margin: 0;
+}
+header{
+    font-size: 1rem;
+    color: White;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+  }
+.logo{
+  background: black;
+  padding: 5px 20px;
+
+}
+.left{
+  background: white;
+  line-height: 1.25rem;
+  border: 1px dashed red;
+  padding:30px 10px;
+}
+
+article{
+  font-family: 'Anaheim', sans-serif;
+}
+.heroImg{
+  margin-top: 10px;
+  height: 80vh;
+  width: 100%;
+  background:url("map.jpg");
+  background-repeat: no-repeat;
+
+}
+div.map{
+  width: auto;
+  background-color: black;
+}
+footer{
+  margin-top:10px;
+  text-align: center;
+}
+i{
+  padding:10px 0;
+}
+h1{
+  font-size: 2rem;
+}
+a{
+    text-decoration: none;
+  }
+
+li{
+  list-style: none;
+  font-size: .5rem;
+  }
+ul{
+    padding: 0;
+}
+
+
+a{
+  color: salmon;
+  font-size: 1rem;
+}
+header, footer, article, nav, div {
+  padding: 20px;
+}
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle {
+  grid-area: article;
+}
+#mainNav {
+  grid-area: nav;
+  }
+
+
+  @media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "nav"
+      "footer";
+    grid-template-rows: 1fr 1fr 60% 1fr;
+    grid-template-columns: 1fr;
+ }
